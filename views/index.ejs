@@ -2,10 +2,13 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body class="w-screen h-screen bg-amber-100">
+    <h1 class="flex justify-center items-center w-full h-20 mt-6 bg-amber-200 text-4xl"><%= title %></h1>
+    <ul class="flex justify-center items-center w-1/5 mx-auto mt-4 gap-4 bg-amber-400 text-white text-xl flex-wrap">
+      <li class="underline"><a href="/skills">Sylvester Smith</a></li>
+    </ul>
   </body>
 </html>
