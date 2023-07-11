@@ -27,9 +27,14 @@ const skills = [
 ]
 
 module.exports = {
-    getAll
+    getAll,
+    getOne
 }
 
 function getAll() {
     return skills
+}
+
+function getOne(name) {
+    return skills.find(skill => skill.name === name)
 }
