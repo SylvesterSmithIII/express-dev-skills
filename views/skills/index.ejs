@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
-    <h1>Here Are The Current Skills</h1>
-    <ul>
-        <% skills.forEach(skill => { %>
-            <li>
-                <a href="/skills/<%= skill.name %>"><%= skill.name %></a>
-            </li>
-        <% }) %>
-    </ul>
+<body class="w-screen h-screen bg-amber-100">
+    <header class="flex justify-center items-center w-full h-20 mt-6 bg-amber-200">
+        <h1 class="text-4xl">Here Are The Skills For <%= "User" %></h1>
+    </header>
+    
+    <main class="flex justify-center items-center w-1/5 mx-auto mt-4 gap-4 bg-amber-400">
+        <ul>
+            <% skills.forEach(skill => { %>
+                <li>
+                    <a class="underline text-sky-300 text-xl" href="/skills/<%= skill.name %>"><%= skill.name %></a>
+                </li>
+            <% }) %>
+        </ul>
+    </main>
 </body>
 </html>

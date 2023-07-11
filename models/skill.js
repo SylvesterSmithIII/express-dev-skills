@@ -15,7 +15,7 @@ const skills = [
       experienceYears: 4,
     },
     {
-      name: "React",
+      name: "Python",
       level: "Advanced",
       experienceYears: 2,
     },
