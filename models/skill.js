@@ -45,6 +45,7 @@ function getOne(name) {
 function create(skill) {
   // skill.skill
   if (skills.some(savedSkill => savedSkill.name.toLowerCase() === skill.name.toLowerCase())) return
+  if (skill.name === "" || skill.experienceYears === "") return
   if (skill.years > 3) {
       skill.level = "Intermediate"
   } else {

@@ -1,9 +1,9 @@
 <%- include('../partials/header') %>
-<main class="flex justify-center items-center w-1/5 mx-auto mt-4 gap-4 bg-amber-400 text-xl flex-wrap">
-    <form action="/skills" method="POST" autocomplete="off">
-        <input type="text" name="name">
-        <input type="number" name="experienceYears">
-        <button type="submit">Save Skill</button>
+<main class="flex justify-center items-center w-1/5 mx-auto mt-4 text-xl flex-wrap text-white">
+    <form action="/skills" method="POST" autocomplete="off" class="space-y-4">
+        <input type="text" name="name" class="bg-amber-400 outline-none p-2">
+        <input type="number" min="0" name="experienceYears" class="bg-amber-400 outline-none p-2">
+        <button type="submit" class="bg-amber-400 hover:text-black p-2">Save Skill</button>
     </form>
 </main>
 <%- include('../partials/footer') %>

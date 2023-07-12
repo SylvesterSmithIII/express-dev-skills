@@ -8,6 +8,11 @@
     <title>Document</title>
 </head>
 <body class="w-screen h-screen bg-amber-100 text-center">
-    <header class="flex justify-center items-center w-full h-20 mt-6 bg-amber-200">
+    <header class="flex relative justify-center items-center w-full h-20 mt-6 bg-amber-200">
+        <div class="absolute left-0 text-black">
+            <a href="/" class="hover:text-white underline">Home</a>
+            |
+            <a href="/skills" class="hover:text-white underline">All Skills</a>
+        </div>
         <h1 class="text-4xl"> <%= title %> </h1>
     </header>
