@@ -1,10 +1,10 @@
 <%- include('../partials/header') %>
-    <header class="flex justify-center items-center w-full h-20 mt-6 bg-amber-200">
-        <h3 class="text-4xl"><%= skill.name %></h3>
-    </header>
-    
     <main class="flex justify-center items-center w-1/5 mx-auto mt-4 gap-4 bg-amber-400 text-white text-xl flex-wrap">
         <h3>Level - <%= skill.level %></h3>
         <h3>Experience Years - <%= skill.experienceYears %></h3>
     </main>
+
+        <form action="/skills/<%= skill.name %>?_method=DELETE" method="POST">
+            <button class="flex justify-center items-center w-1/5 mx-auto mt-4 gap-4 bg-amber-400 hover:bg-amber-700 text-white text-xl flex-wrap" type="submit">Delete Skill?</button>
+        </form>
 <%- include('../partials/footer') %>

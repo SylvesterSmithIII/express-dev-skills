@@ -1,0 +1,9 @@
+<%- include('../partials/header') %>
+<main class="flex justify-center items-center w-1/5 mx-auto mt-4 gap-4 bg-amber-400 text-xl flex-wrap">
+    <form action="/skills" method="POST" autocomplete="off">
+        <input type="text" name="name">
+        <input type="number" name="experienceYears">
+        <button type="submit">Save Skill</button>
+    </form>
+</main>
+<%- include('../partials/footer') %>
